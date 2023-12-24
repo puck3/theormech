@@ -43,7 +43,7 @@ for i in range(len(T)):
 fgr = plot.figure()
 grf = fgr.add_subplot(1, 1, 1)
 grf.axis('equal')
-grf.set(xlim=[-9, 9], ylim=[-9, 9])
+grf.set(xlim=[-6, 6], ylim=[-6, 6])
 grf.plot(X, Y)
 
 Pnt = grf.plot(X[0], Y[0], marker='o')[0]
@@ -95,7 +95,7 @@ def anim(j):
     ArRX, ArRY = vect_arrow(RX[j], RY[j], X[j], Y[j])
     R_arr.set_data(ArRX, ArRY)
 
-    return Pnt, Vpl, V_arr, Apl, A_arr, Rpl, R_arr
+    return [Pnt, Vpl, V_arr, Apl, A_arr, Rpl, R_arr]
 
 
 an = FuncAnimation(fgr, anim, frames=step, interval=1)
