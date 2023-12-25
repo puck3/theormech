@@ -72,12 +72,19 @@ gr.axis('equal')
 
 x_plt = fgr.add_subplot(4, 2, 2)
 x_plt.plot(t, x)
+x_plt.set_title('x(t)')
+
 phi_plt = fgr.add_subplot(4, 2, 4)
 phi_plt.plot(t, phi)
+phi_plt.set_title('phi(t)')
+
 n_eps_plt = fgr.add_subplot(4, 2, 6)
 n_eps_plt.plot(t, N_eps)
+n_eps_plt.set_title('N_eps(t)')
+
 n_ita_plt = fgr.add_subplot(4, 2, 8)
 n_ita_plt.plot(t, N_ita)
+n_ita_plt.set_title('N_ita(t)')
 
 Yo = 1.4
 r = 0.1
